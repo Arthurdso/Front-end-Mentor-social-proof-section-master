@@ -1,0 +1,129 @@
+:root {
+    --white:hsl(0, 0%, 100%);
+    --very-dark-magenta:hsl(300, 43%, 22%);
+    --soft-pink:hsl(333, 80%, 67%);
+    --dark-grayish-magenta:hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+    background-image: url(../images/bg-pattern-top-mobile.svg);
+    min-width: 375px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.main {
+    margin: 0 auto;
+    padding: 2.5rem 2.2rem;
+}
+
+.header__title {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--very-dark-magenta);
+    padding-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.header__paragraph {
+    font-size: 0.9rem;
+    text-align: center;
+    color: var(--dark-grayish-magenta);
+    font-weight: 400;
+    padding-bottom: 1.5rem;
+}
+
+.rating__div {
+    margin: 1rem 0rem;
+    padding: 1rem 3rem;
+    background-color: #ede7ee;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.star-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating__star {
+    margin: 0 2px;
+}
+
+.rating__message {
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    padding-top: 1px;
+}
+
+.rating__img {
+    width: 15px;
+    padding-bottom: 10px;
+}
+
+.user {
+    background-color: var(--very-dark-magenta);
+    border-radius: 10px;
+    margin: 1rem 0;
+    padding: 2rem 1.5rem;
+}
+
+.user__img {
+    border-radius: 50%;
+    width: 3rem;
+    float: left;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
+.user__name {
+    color: var(--white);
+    font-weight: 700;
+    display: block;
+    margin-top: 1.5rem;
+}
+
+.user__title {
+    color: var(--soft-pink);
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.user__paragraph {
+    font-size: 12px;
+    color: var(--white);
+    text-align: left;
+    line-height: 1.3rem;
+    padding: 0 0.5rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+
+}
