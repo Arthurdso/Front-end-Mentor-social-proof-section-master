@@ -140,7 +140,7 @@ body {
     }
     
     .main {
-        margin: 4rem auto;
+        margin: 2rem auto;
         max-width: 90%;
         display: grid;
         grid-template-areas: 
@@ -237,7 +237,7 @@ body {
 
     .footer {
         grid-area: footer;
-        margin-top: -145px;
+        margin-top: -80px;
     }
 
 }
