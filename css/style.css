@@ -129,16 +129,18 @@ body {
     font-size: 12px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1220px) {
     body {
         max-width: 90%;     
         margin: 0 auto;
         background-image: url(../images/bg-pattern-top-desktop.svg) , url(../images/bg-pattern-bottom-desktop.svg);
         background-position: top, bottom;
-        
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
     
-    main {
+    .main {
+        margin: 4rem auto;
         max-width: 90%;
         display: grid;
         grid-template-areas: 
@@ -146,9 +148,10 @@ body {
         'user user user user'
         'footer footer footer footer';
         grid-template-columns: 20% 40%;
+        height:100vh ;
     }
 
-    header {
+    .header {
         grid-area: header;
         width: 50%;
     }
@@ -161,7 +164,7 @@ body {
 
     .header__paragraph {
         text-align: left;
-        font-size: 12px;
+        font-size: 13px;
         line-height: 0.5rem;
         width: 125%;
         font-weight: 500;
@@ -197,15 +200,13 @@ body {
     }
 
     .user {
-        max-width: 340px;
+        min-width: 340px;
+        max-width: 400px;
         margin-right: 2%;
         height: 220px;
         margin-top: 4%;
-    }
-
-    .user-1{
-        
-    }
+    }  
+    
     .user__paragraph-1{
         width: 111%;
         font-size: 11px;
@@ -234,9 +235,69 @@ body {
         width: 119%;
     }
 
-    footer {
+    .footer {
         grid-area: footer;
-        margin-top: -18px;
+        margin-top: -145px;
+    }
+
+}
+
+@media only screen and (min-width: 1440px) {
+    .user__paragraph {
+        font-size: 11px;
+        text-align: left;
+        margin-left: -35px;
+        width: 108%;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+
+    .header__title {
+        font-size: 4rem;
+        text-align: left;
+        font-weight: 700;
+        width: 120%;
+    }
+
+    .header__paragraph {
+        font-size: 17px;
+    }
+
+    .user {
+        min-width: 340px;
+        max-width: 466px;
+        margin-right: 2%;
+        height: 300px;
+        margin-top: 4%;
+    }
+
+    .user-2 {
+        margin-top: 5%;
+        max-height: 300px;
+    }
+
+    .user-3 {
+        margin-top: 6%;
+        max-height: 300px;
+    }
+
+    .user__paragraph {
+        font-size: 21px;
+        text-align: left;
+        margin-left: -32px;
+        margin-top: 1rem;
+        /* width: 119%; */
+        line-height: 25px;
+    }
+
+    .footer {
+        font-size: 18px;
+        margin-top: -155px;
+    }
+
+    .footer a {
+        font-size: 21px;
     }
 
 }
