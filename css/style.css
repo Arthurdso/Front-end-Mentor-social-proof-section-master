@@ -81,7 +81,7 @@ body {
 
 .user {
     background-color: var(--very-dark-magenta);
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 1rem 0;
     padding: 2rem 1.5rem;
 }
@@ -126,13 +126,13 @@ body {
     font-size: 12px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
     body {
         max-width: 90%;     
         margin: 0 auto;
         background-image: url(../images/bg-pattern-top-desktop.svg) , url(../images/bg-pattern-bottom-desktop.svg);
         background-position: top, bottom;
-        margin-top: 5%;
+        
     }
     
     main {
@@ -151,14 +151,15 @@ body {
     }
 
     .header__title{
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-align: left;
+        font-weight: 700;
     }
 
     .header__paragraph {
         text-align: left;
-        font-size: 15px;
-        line-height: 1rem;
+        font-size: 12px;
+        line-height: 0.5rem;
         width: 125%;
         font-weight: 500;
         line-height: 1.6rem;
@@ -172,7 +173,7 @@ body {
 
     .rating__div {
         display: flex;
-        width:150%;
+        width:174%;
         border-radius: 8px;
         justify-content: space-around;
     }
@@ -193,32 +194,34 @@ body {
     }
 
     .user {
-        max-width: 330px;
-        margin-right: 3%;
+        max-width: 350px;
+        margin-right: 2%;
         height: 220px;
-        margin-top: 5%;
+        margin-top: 4%;
     }
 
     .user-1 {
-        margin-left: 12%;
     }
 
     .user-2 {
-        margin-top: 6%;
+        margin-top: 5%;
         max-height: 220px;
     }
 
     .user-3 {
-        margin-top: 7%;
+        margin-top: 6%;
         max-height: 220px;
     }
 
     .user__paragraph {
-        font-size: 12px;
+        font-size: 10.5px;
         font-weight: 400;
+        width: 103%;
     }
 
     footer {
         grid-area: footer;
+        margin-top: -18px;
     }
+
 }
