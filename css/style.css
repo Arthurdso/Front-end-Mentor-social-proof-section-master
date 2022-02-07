@@ -88,7 +88,7 @@ body {
 
 .user__img {
     border-radius: 50%;
-    width: 3rem;
+    width: 2.2rem;
     float: left;
     margin-right: 1rem;
     margin-top: 1rem;
@@ -99,7 +99,8 @@ body {
     color: var(--white);
     font-weight: 700;
     display: block;
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
+    font-size: 12px;
 }
 
 .user__title {
@@ -107,6 +108,7 @@ body {
     font-weight: 400;
     display: inline-block;
     margin-bottom: 1rem;
+    font-size:12px;
 }
 
 .user__paragraph {
@@ -114,7 +116,8 @@ body {
     color: var(--white);
     text-align: left;
     line-height: 1.3rem;
-    padding: 0 0.5rem;
+    padding: 0 2.5rem;
+
 }
 
 .attribution {
@@ -194,13 +197,24 @@ body {
     }
 
     .user {
-        max-width: 350px;
+        max-width: 340px;
         margin-right: 2%;
         height: 220px;
         margin-top: 4%;
     }
 
-    .user-1 {
+    .user-1{
+        
+    }
+    .user__paragraph-1{
+        width: 111%;
+        font-size: 11px;
+        text-align: left;
+        margin-left: -32px;
+        color: var(--white);
+        text-align: left;
+        line-height: 1.3rem;
+        padding: 0 2.5rem;
     }
 
     .user-2 {
@@ -214,9 +228,10 @@ body {
     }
 
     .user__paragraph {
-        font-size: 10.5px;
-        font-weight: 400;
-        width: 103%;
+        font-size: 11px;
+        text-align: left;
+        margin-left: -32px;
+        width: 119%;
     }
 
     footer {
